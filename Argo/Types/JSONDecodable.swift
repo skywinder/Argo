@@ -1,6 +1,11 @@
 import Foundation
 import Runes
 
+public protocol JSONDecodable {
+  typealias DecodedType = Self
+  static func decode(json: JSON) -> DecodedType?
+}
+
 extension String: JSONDecodable {
   public static func decode(j: JSON) -> String? {
     switch j {

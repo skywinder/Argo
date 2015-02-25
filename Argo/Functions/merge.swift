@@ -1,4 +1,3 @@
-// pure merge for Dictionaries
 func +<T, V>(var lhs: [T: V], rhs: [T: V]) -> [T: V] {
   var dict = lhs
 
