@@ -51,6 +51,8 @@
 		EAD9FB1A19D4B23F0031E006 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9FB1919D4B23F0031E006 /* JSON.swift */; };
 		EADADCB21A5DB6F600B180EC /* EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADADCB11A5DB6F600B180EC /* EquatableTests.swift */; };
 		EADADCB41A5DB7F800B180EC /* EquatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADADCB11A5DB6F600B180EC /* EquatableTests.swift */; };
+		EAEE2F4C1A9FCC9F00DA2846 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEE2F4B1A9FCC9F00DA2846 /* Box.framework */; };
+		EAEE2F4E1A9FCCAA00DA2846 /* Box.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAEE2F4D1A9FCCAA00DA2846 /* Box.framework */; };
 		F802D4C31A5EE061005E236C /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802D4C21A5EE061005E236C /* NSURL.swift */; };
 		F802D4C41A5EE172005E236C /* NSURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802D4C21A5EE061005E236C /* NSURL.swift */; };
 		F802D4C61A5EE2D5005E236C /* url.json in Resources */ = {isa = PBXBuildFile; fileRef = F802D4C51A5EE2D5005E236C /* url.json */; };
@@ -194,6 +196,8 @@
 		EAD9FB1719D49A3E0031E006 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestModel.swift; path = ../../../Argo/ArgoTests/Models/TestModel.swift; sourceTree = "<group>"; };
 		EAD9FB1919D4B23F0031E006 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = ../../../Argo/Argo/Globals/JSON.swift; sourceTree = "<group>"; };
 		EADADCB11A5DB6F600B180EC /* EquatableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquatableTests.swift; sourceTree = "<group>"; };
+		EAEE2F4B1A9FCC9F00DA2846 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = "<group>"; };
+		EAEE2F4D1A9FCCAA00DA2846 /* Box.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Box.framework; sourceTree = "<group>"; };
 		F802D4C21A5EE061005E236C /* NSURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURL.swift; sourceTree = "<group>"; };
 		F802D4C51A5EE2D5005E236C /* url.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = url.json; sourceTree = "<group>"; };
 		F874B7E91A66BF52004CCE5E /* root_array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = root_array.json; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEE2F4C1A9FCC9F00DA2846 /* Box.framework in Frameworks */,
 				F87D9D8A1A92676100C8AF1D /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,6 +236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAEE2F4E1A9FCCAA00DA2846 /* Box.framework in Frameworks */,
 				F87D9D8B1A92676400C8AF1D /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +420,7 @@
 		F87D9D841A92675400C8AF1D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EAEE2F4B1A9FCC9F00DA2846 /* Box.framework */,
 				F87D9D851A92675400C8AF1D /* Runes.framework */,
 			);
 			name = iOS;
@@ -423,6 +430,7 @@
 		F87D9D861A92675400C8AF1D /* Mac */ = {
 			isa = PBXGroup;
 			children = (
+				EAEE2F4D1A9FCCAA00DA2846 /* Box.framework */,
 				F87D9D871A92675400C8AF1D /* Runes.framework */,
 			);
 			name = Mac;
