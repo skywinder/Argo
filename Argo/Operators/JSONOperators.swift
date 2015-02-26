@@ -4,7 +4,7 @@ import Runes
 
 // Pull value from JSON
 public func <|<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, key: String) -> Parser<A> {
-  return decodeObject(json) >>- { maybe(.MissingKey(key), A.fromJSON, $0[key]) }
+  return decodeObject(json) >>- { (A.fromJSON <^> $0[key]) ?? .MissingKey(key) }
 }
 
 // Pull optional value from JSON

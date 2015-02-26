@@ -6,8 +6,9 @@ extension NSURL: JSONDecodable {
 
   public class func fromJSON(j: JSON) -> Parser<NSURL> {
     switch j {
-    case .String(let urlString): return maybe(typeMismatch("URL", j), pure, NSURL(string: urlString))
-    default: return typeMismatch("URL", j)
+    case .String(let urlString):
+      return NSURL(string: urlString).map(pure) ?? .TypeMismatch("\(j) is not a URL")
+    default: return .TypeMismatch("\(j) is not a URL")
     }
   }
 }

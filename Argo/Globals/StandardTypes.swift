@@ -59,3 +59,8 @@ public func decodeObject(value: JSON) -> Parser<Dictionary<String, JSON>> {
   default: return typeMismatch("Object", value)
   }
 }
+
+private func typeMismatch<T>(type: String, object: JSON) -> Parser<T> {
+  return .TypeMismatch("\(object) is not a \(type)")
+}
+
