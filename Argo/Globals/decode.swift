@@ -1,15 +1,9 @@
 public func decode<T: JSONDecodable where T == T.DecodedType>(object: AnyObject) -> T? {
-  switch decodeResult(object) as Parser<T> {
-  case let .Success(box): return box.value
-  case .Failure(_): return .None
-  }
+  return decodeResult(object).value
 }
 
 public func decode<T: JSONDecodable where T == T.DecodedType>(object: AnyObject) -> [T]? {
-  switch decodeResult(object) as Parser<[T]> {
-  case let .Success(box): return box.value
-  case .Failure(_): return .None
-  }
+  return decodeResult(object).value
 }
 
 public func decodeResult<T: JSONDecodable where T == T.DecodedType>(object: AnyObject) -> Parser<T> {

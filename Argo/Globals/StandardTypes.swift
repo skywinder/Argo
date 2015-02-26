@@ -53,6 +53,9 @@ public func decodeArray<A where A: JSONDecodable, A == A.DecodedType>(value: JSO
   }
 }
 
-public func typeMismatch<T>(type: String, object: JSON) -> Parser<T> {
-  return .Failure("\(object) is not a \(type)")
+public func decodeObject(value: JSON) -> Parser<Dictionary<String, JSON>> {
+  switch value {
+  case let .Object(o): return pure(o)
+  default: return typeMismatch("Object", value)
+  }
 }
