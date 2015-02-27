@@ -32,6 +32,8 @@
 		EABDF6951A9CD4FC00B6CC83 /* PListDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABDF6931A9CD4FC00B6CC83 /* PListDecodingTests.swift */; };
 		EAC59A0F1A9F74C500BEB5CC /* ParserOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC59A0E1A9F74C500BEB5CC /* ParserOperators.swift */; };
 		EAC59A101A9F74C500BEB5CC /* ParserOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC59A0E1A9F74C500BEB5CC /* ParserOperators.swift */; };
+		EAD8BF621AA0DD3900A11963 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAEE2F4B1A9FCC9F00DA2846 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EAD8BF631AA0DD4100A11963 /* Box.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAEE2F4D1A9FCCAA00DA2846 /* Box.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAD9FAEB19D0F6930031E006 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9FAEA19D0F6930031E006 /* Operators.swift */; };
 		EAD9FAF419D0F74C0031E006 /* StandardTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9FAF319D0F74C0031E006 /* StandardTypes.swift */; };
 		EAD9FAF619D0F7900031E006 /* JSONOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD9FAF519D0F7900031E006 /* JSONOperators.swift */; };
@@ -126,6 +128,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F87D9D8D1A92676F00C8AF1D /* Runes.framework in CopyFiles */,
+				EAD8BF621AA0DD3900A11963 /* Box.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +139,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F87D9D8F1A92677A00C8AF1D /* Runes.framework in CopyFiles */,
+				EAD8BF631AA0DD4100A11963 /* Box.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

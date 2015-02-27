@@ -53,9 +53,9 @@ public func decodeArray<A where A: JSONDecodable, A == A.DecodedType>(value: JSO
   }
 }
 
-public func decodeObject(value: JSON) -> Parser<[String:JSON]> {
+public func decodeObject<A where A: JSONDecodable, A == A.DecodedType>(value: JSON) -> Parser<[String: A]> {
   switch value {
-  case let .Object(o): return pure(o)
+  case let .Object(o): return sequence(map(o, A.fromJSON))
   default: return .typeMismatch("Object", object: value)
   }
 }
