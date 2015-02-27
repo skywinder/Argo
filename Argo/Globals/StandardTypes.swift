@@ -48,14 +48,14 @@ extension Float: JSONDecodable {
 
 public func decodeArray<A where A: JSONDecodable, A == A.DecodedType>(value: JSON) -> Parser<[A]> {
   switch value {
-  case let .Array(a): return sequence(map(a) { A.fromJSON($0) })
+  case let .Array(a): return sequence(a.map { A.fromJSON($0) })
   default: return typeMismatch("Array", value)
   }
 }
 
 public func decodeObject<A where A: JSONDecodable, A == A.DecodedType>(value: JSON) -> Parser<[String: A]> {
   switch value {
-  case let .Object(o): return sequence(map(o) { A.fromJSON($0) })
+  case let .Object(o): return sequence(o.map { A.fromJSON($0) })
   default: return typeMismatch("Object", value)
   }
 }
