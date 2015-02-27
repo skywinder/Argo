@@ -12,7 +12,7 @@ public enum Parser<T> {
     }
   }
 
-  static func optional<A>(p: Parser<A>) -> Parser<A?> {
+  public static func optional<A>(p: Parser<A>) -> Parser<A?> {
     switch p {
     case let .Success(box): return .Success(Box(.Some(box.value)))
     case let .MissingKey(string): return .Success(Box(.None))
