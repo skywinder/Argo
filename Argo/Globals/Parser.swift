@@ -11,6 +11,10 @@ public enum Parser<T> {
     default: return .None
     }
   }
+
+  public static func typeMismatch(expectedType: String, object: JSON) -> Parser<T> {
+    return .TypeMismatch("\(object) is not a \(expectedType)")
+  }
 }
 
 func parseOptional<A>(p: Parser<A>) -> Parser<A?> {
