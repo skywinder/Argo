@@ -11,13 +11,9 @@ public enum Parser<T> {
     default: return .None
     }
   }
-
-  public static func typeMismatch(expectedType: String, object: JSON) -> Parser<T> {
-    return .TypeMismatch("\(object) is not a \(expectedType)")
-  }
 }
 
-func parseOptional<A>(p: Parser<A>) -> Parser<A?> {
+func optional<A>(p: Parser<A>) -> Parser<A?> {
   switch p {
   case let .Success(box): return .Success(Box(.Some(box.value)))
   case let .MissingKey(string): return .Success(Box(.None))

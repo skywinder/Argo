@@ -9,7 +9,7 @@ public func <|<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, key: St
 
 // Pull optional value from JSON
 public func <|?<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, key: String) -> Parser<A?> {
-  return parseOptional(json <| key)
+  return optional(json <| key)
 }
 
 // Pull embedded value from JSON
@@ -19,7 +19,7 @@ public func <|<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, keys: [
 
 // Pull embedded optional value from JSON
 public func <|?<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, keys: [String]) -> Parser<A?> {
-  return parseOptional(json <| keys)
+  return optional(json <| keys)
 }
 
 // MARK: Arrays
@@ -31,7 +31,7 @@ public func <||<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, key: S
 
 // Pull optional array from JSON
 public func <||?<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, key: String) -> Parser<[A]?> {
-  return parseOptional(json <|| key)
+  return optional(json <|| key)
 }
 
 // Pull embedded array from JSON
@@ -41,6 +41,6 @@ public func <||<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, keys: 
 
 // Pull embedded optional array from JSON
 public func <||?<A where A: JSONDecodable, A == A.DecodedType>(json: JSON, keys: [String]) -> Parser<[A]?> {
-  return parseOptional(json <|| keys)
+  return optional(json <|| keys)
 }
 
