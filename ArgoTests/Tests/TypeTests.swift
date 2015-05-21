@@ -4,17 +4,17 @@ import Runes
 
 class TypeTests: XCTestCase {
   func testAllTheTypes() {
-    let json = JSON.parse <^> JSONFileReader.JSON(fromFile: "types")
-    let model = json >>- TestModel.decode
+    let model: TestModel? = JSONFileReader.JSON(fromFile: "types") >>- decode
 
     XCTAssert(model != nil)
-    XCTAssert(model?.int == 5)
+    XCTAssert(model?.numerics.int == 5)
+    XCTAssert(model?.numerics.int64 == 9007199254740992)
+    XCTAssert(model?.numerics.double == 3.4)
+    XCTAssert(model?.numerics.float == 1.1)
+    XCTAssert(model?.numerics.intOpt != nil)
+    XCTAssert(model?.numerics.intOpt! == 4)
     XCTAssert(model?.string == "Cooler User")
-    XCTAssert(model?.double == 3.4)
-    XCTAssert(model?.float == 1.1)
     XCTAssert(model?.bool == false)
-    XCTAssert(model?.intOpt != nil)
-    XCTAssert(model?.intOpt! == 4)
     XCTAssert(model?.stringArray.count == 2)
     XCTAssert(model?.stringArrayOpt == nil)
     XCTAssert(model?.eStringArray.count == 2)
@@ -25,8 +25,7 @@ class TypeTests: XCTestCase {
   }
 
   func testFailingEmbedded() {
-    let json = JSON.parse <^> JSONFileReader.JSON(fromFile: "types_fail_embedded")
-    let model = json >>- TestModel.decode
+    let model: TestModel? = JSONFileReader.JSON(fromFile: "types_fail_embedded") >>- decode
 
     XCTAssert(model == nil)
   }

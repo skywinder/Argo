@@ -7,12 +7,12 @@ struct User {
   let email: String?
 }
 
-extension User: JSONDecodable {
+extension User: Decodable {
   static func create(id: Int)(name: String)(email: String?) -> User {
     return User(id: id, name: name, email: email)
   }
 
-  static func decode(j: JSON) -> User? {
+  static func decode(j: JSON) -> Decoded<User> {
     return User.create
       <^> j <| "id"
       <*> j <| "name"

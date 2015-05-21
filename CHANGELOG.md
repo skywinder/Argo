@@ -1,14 +1,130 @@
 # Change Log
 
-## [Unreleased](https://github.com/thoughtbot/Argo/tree/HEAD)
+## [v1.0.2](https://github.com/thoughtbot/Argo/tree/v1.0.2) (2015-05-20)
 
-[Full Changelog](https://github.com/thoughtbot/Argo/compare/v0.4.2...HEAD)
+[Full Changelog](https://github.com/thoughtbot/Argo/compare/v1.0.1...v1.0.2)
+
+**Closed issues:**
+
+- Converting Strings to different Types during decoding [\#131](https://github.com/thoughtbot/Argo/issues/131)
+
+- Argo from Carthage stuck cloning/fetching runes. [\#129](https://github.com/thoughtbot/Argo/issues/129)
+
+- Returning some of a JSON array [\#124](https://github.com/thoughtbot/Argo/issues/124)
+
+- framework search paths issue when using submodules [\#121](https://github.com/thoughtbot/Argo/issues/121)
+
+- TypeMismatch: "Null is not a Int" [\#116](https://github.com/thoughtbot/Argo/issues/116)
+
+**Merged pull requests:**
+
+- Add playground [\#130](https://github.com/thoughtbot/Argo/pull/130) ([gfontenot](https://github.com/gfontenot))
+
+- Add printable to decoded type [\#128](https://github.com/thoughtbot/Argo/pull/128) ([tonyd256](https://github.com/tonyd256))
+
+- Fix submodules [\#127](https://github.com/thoughtbot/Argo/pull/127) ([gfontenot](https://github.com/gfontenot))
+
+- Change `.None` to `nil` in README [\#126](https://github.com/thoughtbot/Argo/pull/126) ([sidraval](https://github.com/sidraval))
+
+- Remove version specification for Runes [\#125](https://github.com/thoughtbot/Argo/pull/125) ([gfontenot](https://github.com/gfontenot))
+
+- Use Git Submodules for development [\#123](https://github.com/thoughtbot/Argo/pull/123) ([gfontenot](https://github.com/gfontenot))
+
+- Bring back CI with Circle-CI [\#120](https://github.com/thoughtbot/Argo/pull/120) ([tonyd256](https://github.com/tonyd256))
+
+## [v1.0.1](https://github.com/thoughtbot/Argo/tree/v1.0.1) (2015-05-01)
+
+[Full Changelog](https://github.com/thoughtbot/Argo/compare/v1.0.0...v1.0.1)
+
+**Closed issues:**
+
+- Thanks! [\#119](https://github.com/thoughtbot/Argo/issues/119)
+
+- Examples for decoding json array to list? [\#118](https://github.com/thoughtbot/Argo/issues/118)
+
+**Merged pull requests:**
+
+- Add a function to convert JSON to .None if = .Null [\#117](https://github.com/thoughtbot/Argo/pull/117) ([tonyd256](https://github.com/tonyd256))
+
+- Update podspec for 1.0.0 [\#115](https://github.com/thoughtbot/Argo/pull/115) ([tonyd256](https://github.com/tonyd256))
+
+## [v1.0.0](https://github.com/thoughtbot/Argo/tree/v1.0.0) (2015-04-27)
+
+[Full Changelog](https://github.com/thoughtbot/Argo/compare/v0.4.3...v1.0.0)
+
+**Implemented enhancements:**
+
+- Wrap up the `NSData -\> JSON` process in something [\#68](https://github.com/thoughtbot/Argo/issues/68)
+
+- Return `Parser<T\>` instead of `Optional<T\>` [\#67](https://github.com/thoughtbot/Argo/issues/67)
+
+- Reorganize file structure [\#62](https://github.com/thoughtbot/Argo/issues/62)
+
+**Closed issues:**
+
+- Handling \[String:String\] dictionaries [\#114](https://github.com/thoughtbot/Argo/issues/114)
+
+- `decode` function comparison without Argo [\#109](https://github.com/thoughtbot/Argo/issues/109)
+
+- Root Array decoding to typealiased Array [\#105](https://github.com/thoughtbot/Argo/issues/105)
+
+- readme.md examples don't match the code [\#104](https://github.com/thoughtbot/Argo/issues/104)
+
+- Map JSON key name [\#103](https://github.com/thoughtbot/Argo/issues/103)
+
+- Error: `Decoded.swift` missing module "Box" [\#102](https://github.com/thoughtbot/Argo/issues/102)
+
+- Argonaut [\#101](https://github.com/thoughtbot/Argo/issues/101)
+
+- JSON.parse performance [\#87](https://github.com/thoughtbot/Argo/issues/87)
+
+- How do you handle swift reserved words in the JSON? [\#86](https://github.com/thoughtbot/Argo/issues/86)
+
+- Parse multiple kind of structs in same array [\#82](https://github.com/thoughtbot/Argo/issues/82)
+
+**Merged pull requests:**
+
+- Rename JSONDecodable to Decodable [\#107](https://github.com/thoughtbot/Argo/pull/107) ([gfontenot](https://github.com/gfontenot))
+
+- Add bin/setup script [\#97](https://github.com/thoughtbot/Argo/pull/97) ([gfontenot](https://github.com/gfontenot))
+
+- Add .fromOptional to Decoded [\#96](https://github.com/thoughtbot/Argo/pull/96) ([gfontenot](https://github.com/gfontenot))
+
+- Reorganize repo [\#71](https://github.com/thoughtbot/Argo/pull/71) ([gfontenot](https://github.com/gfontenot))
+
+- Update the README [\#112](https://github.com/thoughtbot/Argo/pull/112) ([tonyd256](https://github.com/tonyd256))
+
+- Add 'import Runes' to README tl;dr [\#100](https://github.com/thoughtbot/Argo/pull/100) ([exclsr](https://github.com/exclsr))
+
+- Typo in README [\#99](https://github.com/thoughtbot/Argo/pull/99) ([raven](https://github.com/raven))
+
+- Update Documentation README with outline [\#94](https://github.com/thoughtbot/Argo/pull/94) ([gfontenot](https://github.com/gfontenot))
+
+- Break up README into multiple files [\#93](https://github.com/thoughtbot/Argo/pull/93) ([gfontenot](https://github.com/gfontenot))
+
+- Remove extra dictionary creation step [\#90](https://github.com/thoughtbot/Argo/pull/90) ([tonyd256](https://github.com/tonyd256))
+
+- Fix misplaced return in README [\#89](https://github.com/thoughtbot/Argo/pull/89) ([jonahb](https://github.com/jonahb))
+
+- Improve `JSON.parse` performance [\#88](https://github.com/thoughtbot/Argo/pull/88) ([tonyd256](https://github.com/tonyd256))
+
+- Update README with new CocoaPods instructions [\#85](https://github.com/thoughtbot/Argo/pull/85) ([gfontenot](https://github.com/gfontenot))
+
+## [v0.4.3](https://github.com/thoughtbot/Argo/tree/v0.4.3) (2015-03-13)
+
+[Full Changelog](https://github.com/thoughtbot/Argo/compare/v0.4.2...v0.4.3)
 
 **Implemented enhancements:**
 
 - Have JSONValue conform to JSONDecodable [\#63](https://github.com/thoughtbot/Argo/issues/63)
 
 **Closed issues:**
+
+- Issue with Argo + Carthage [\#80](https://github.com/thoughtbot/Argo/issues/80)
+
+- Parse a long JSON with Argo [\#79](https://github.com/thoughtbot/Argo/issues/79)
+
+- Regression in Argo v0.4.2 - crashes Swift 1.2 app [\#76](https://github.com/thoughtbot/Argo/issues/76)
 
 - How to deal with root level Array? [\#74](https://github.com/thoughtbot/Argo/issues/74)
 
@@ -22,7 +138,13 @@
 
 **Merged pull requests:**
 
+- Add logo to README [\#84](https://github.com/thoughtbot/Argo/pull/84) ([kaishin](https://github.com/kaishin))
+
 - Remove JSON subscripting [\#66](https://github.com/thoughtbot/Argo/pull/66) ([gfontenot](https://github.com/gfontenot))
+
+- Remove closures in favor of partial application [\#83](https://github.com/thoughtbot/Argo/pull/83) ([gfontenot](https://github.com/gfontenot))
+
+- Add carthage compatible badge [\#77](https://github.com/thoughtbot/Argo/pull/77) ([tonyd256](https://github.com/tonyd256))
 
 - Argo is bigger than JSON [\#65](https://github.com/thoughtbot/Argo/pull/65) ([tonyd256](https://github.com/tonyd256))
 
@@ -32,9 +154,7 @@
 
 - Remove value function [\#57](https://github.com/thoughtbot/Argo/pull/57) ([tonyd256](https://github.com/tonyd256))
 
-- Update readme parse function to not return optional [\#56](https://github.com/thoughtbot/Argo/pull/56) ([Keithbsmiley](https://github.com/Keithbsmiley))
-
-- Feature/json encodable [\#47](https://github.com/thoughtbot/Argo/pull/47) ([nvh](https://github.com/nvh))
+- Update readme parse function to not return optional [\#56](https://github.com/thoughtbot/Argo/pull/56) ([keith](https://github.com/keith))
 
 ## [v0.4.2](https://github.com/thoughtbot/Argo/tree/v0.4.2) (2015-02-18)
 
@@ -74,11 +194,7 @@
 
 - Floats not JSONDecodable [\#48](https://github.com/thoughtbot/Argo/pull/48) ([kaishin](https://github.com/kaishin))
 
-- Enable app extension API compatibility [\#46](https://github.com/thoughtbot/Argo/pull/46) ([kaishin](https://github.com/kaishin))
-
 - Update the readme with better info about Swift 1.1 [\#45](https://github.com/thoughtbot/Argo/pull/45) ([tonyd256](https://github.com/tonyd256))
-
-- Use static func instead of class func [\#43](https://github.com/thoughtbot/Argo/pull/43) ([klaaspieter](https://github.com/klaaspieter))
 
 ## [v0.4.0](https://github.com/thoughtbot/Argo/tree/v0.4.0) (2015-02-09)
 
@@ -113,8 +229,6 @@
 - Use `pure` from Runes [\#36](https://github.com/thoughtbot/Argo/pull/36) ([gfontenot](https://github.com/gfontenot))
 
 - Use Release scheme for tests and make them pass [\#35](https://github.com/thoughtbot/Argo/pull/35) ([gfontenot](https://github.com/gfontenot))
-
-- Fix bad access in JSONValue.parse [\#32](https://github.com/thoughtbot/Argo/pull/32) ([aschuch](https://github.com/aschuch))
 
 ## [v0.3.1](https://github.com/thoughtbot/Argo/tree/v0.3.1) (2015-01-14)
 
@@ -172,11 +286,7 @@
 
 - Add Equatable functionality to JSONValue [\#20](https://github.com/thoughtbot/Argo/pull/20) ([tonyd256](https://github.com/tonyd256))
 
-- Add some common use case examples to tests [\#19](https://github.com/thoughtbot/Argo/pull/19) ([tonyd256](https://github.com/tonyd256))
-
 - \[Podspec\] Fix misspelling of thoughtbot [\#18](https://github.com/thoughtbot/Argo/pull/18) ([kylef](https://github.com/kylef))
-
-- Introduce podspec and CocoaPods instructions [\#16](https://github.com/thoughtbot/Argo/pull/16) ([kylef](https://github.com/kylef))
 
 - Add CircleCI config [\#15](https://github.com/thoughtbot/Argo/pull/15) ([tonyd256](https://github.com/tonyd256))
 
@@ -211,8 +321,6 @@
 - Share scheme [\#7](https://github.com/thoughtbot/Argo/pull/7) ([gfontenot](https://github.com/gfontenot))
 
 - \[README.md\] Fix CocoaPods typo [\#6](https://github.com/thoughtbot/Argo/pull/6) ([ayanonagon](https://github.com/ayanonagon))
-
-- Fixed case sensitivity for file paths [\#4](https://github.com/thoughtbot/Argo/pull/4) ([Jerry-Carter](https://github.com/Jerry-Carter))
 
 - Spelling error, curryed/curried [\#3](https://github.com/thoughtbot/Argo/pull/3) ([pbrisbin](https://github.com/pbrisbin))
 

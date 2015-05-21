@@ -15,9 +15,10 @@ public extension JSON {
     case let v as [AnyObject]: return .Array(v.map(parse))
 
     case let v as [Swift.String: AnyObject]:
-      return .Object(reduce(v.keys, [:]) { accum, key in
-        let parsedValue = (self.parse <^> v[key]) ?? .Null
-        return accum + [key: parsedValue]
+      return .Object(reduce(v, [:]) { (var accum, elem) in
+        let parsedValue = (self.parse <^> elem.1) ?? .Null
+        accum[elem.0] = parsedValue
+        return accum
       })
 
     case let v as Swift.String: return .String(v)
@@ -27,9 +28,9 @@ public extension JSON {
   }
 }
 
-extension JSON: JSONDecodable {
-  public static func decode(j: JSON) -> JSON? {
-    return j
+extension JSON: Decodable {
+  public static func decode(j: JSON) -> Decoded<JSON> {
+    return pure(j)
   }
 }
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'Argo'
-  spec.version = '0.4.2'
+  spec.version = '1.0.2'
   spec.summary = 'Functional JSON parsing library for Swift.'
   spec.homepage = 'https://github.com/thoughtbot/Argo'
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
@@ -16,6 +16,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '8.0'
   spec.osx.deployment_target = '10.9'
 
-  spec.dependency 'Runes'
+  spec.dependency 'Runes', '>= 1.2.2'
+  spec.dependency 'Box', '~> 1.2'
 end
 
